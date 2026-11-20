@@ -13,8 +13,8 @@
     <Authors>Craig Davey</Authors>
     <Description>Save observing sites and switch the active NINA profile between them.</Description>
     <PluginLongDescription>Stores a reusable list of observing sites with latitude, longitude and elevation. Pick a site from the plugin settings page or the Site Switcher dock panel to update the active NINA profile coordinates immediately. The selected site is remembered per profile.</PluginLongDescription>
-    <RepositoryUrl>https://github.com/craigdavey/Site-Switcher</RepositoryUrl>
-    <PluginHomepage>https://github.com/craigdavey/Site-Switcher</PluginHomepage>
+    <RepositoryUrl>https://github.com/CDavey617/Site-Switcher</RepositoryUrl>
+    <PluginHomepage>https://github.com/CDavey617/Site-Switcher</PluginHomepage>
     <PluginTags>site,sites,location,latitude,longitude,profile</PluginTags>
     <MinimumNinaVersion>3.3.0.1060</MinimumNinaVersion>
     <PluginLicense>MPL-2.0</PluginLicense>
