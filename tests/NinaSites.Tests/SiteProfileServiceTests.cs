@@ -20,6 +20,14 @@ namespace CraigDavey.Nina.Sites.Tests {
 
             var profiles = new Mock<IProfileService>();
             profiles.SetupGet(p => p.ActiveProfile).Returns(profile.Object);
+            // A mock does not execute NINA's real Change* implementations, so
+            // mirror their effect on the astrometry settings for this test.
+            profiles.Setup(p => p.ChangeLatitude(It.IsAny<double>()))
+                .Callback<double>(value => astrometry.Object.Latitude = value);
+            profiles.Setup(p => p.ChangeLongitude(It.IsAny<double>()))
+                .Callback<double>(value => astrometry.Object.Longitude = value);
+            profiles.Setup(p => p.ChangeElevation(It.IsAny<double>()))
+                .Callback<double>(value => astrometry.Object.Elevation = value);
 
             var site = new ObservingSite {
                 Name = "Test site",
