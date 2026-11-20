@@ -1,0 +1,42 @@
+<Project>
+  <!-- Single source of plugin identity and NINA manifest metadata. The GUID is permanent. -->
+  <PropertyGroup>
+    <PluginId>9AE89050-4DDE-4F67-991A-3A6D34A90A80</PluginId>
+    <Version Condition="'$(Version)' == ''">1.0.0.0</Version>
+    <AssemblyVersion>$(Version)</AssemblyVersion>
+    <FileVersion>$(Version)</FileVersion>
+    <Title>Site Switcher</Title>
+    <AssemblyTitle>$(Title)</AssemblyTitle>
+    <Product>$(Title)</Product>
+    <Copyright>Copyright 2026 Craig Davey</Copyright>
+    <Company>Craig Davey</Company>
+    <Authors>Craig Davey</Authors>
+    <Description>Save observing sites and switch the active NINA profile between them.</Description>
+    <PluginLongDescription>Stores a reusable list of observing sites with latitude, longitude and elevation. Pick a site from the plugin settings page or the Site Switcher dock panel to update the active NINA profile coordinates immediately. The selected site is remembered per profile.</PluginLongDescription>
+    <RepositoryUrl>https://github.com/craigdavey/nina-sites-plugin</RepositoryUrl>
+    <PluginHomepage>https://github.com/craigdavey/nina-sites-plugin</PluginHomepage>
+    <PluginTags>site,sites,location,latitude,longitude,profile</PluginTags>
+    <MinimumNinaVersion>3.3.0.1060</MinimumNinaVersion>
+    <PluginLicense>MPL-2.0</PluginLicense>
+    <PluginLicenseUrl>https://www.mozilla.org/en-US/MPL/2.0/</PluginLicenseUrl>
+    <PluginChangelogUrl></PluginChangelogUrl>
+    <PluginFeaturedImageUrl></PluginFeaturedImageUrl>
+    <PluginScreenshotUrl></PluginScreenshotUrl>
+    <PluginAltScreenshotUrl></PluginAltScreenshotUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.InteropServices.GuidAttribute"><_Parameter1>$(PluginId)</_Parameter1></AssemblyAttribute>
+    <AssemblyAttribute Include="System.Runtime.InteropServices.ComVisibleAttribute"><_Parameter1>false</_Parameter1></AssemblyAttribute>
+    <AssemblyMetadata Include="MinimumApplicationVersion" Value="$(MinimumNinaVersion)" />
+    <AssemblyMetadata Include="License" Value="$(PluginLicense)" />
+    <AssemblyMetadata Include="LicenseURL" Value="$(PluginLicenseUrl)" />
+    <AssemblyMetadata Include="Repository" Value="$(RepositoryUrl)" />
+    <AssemblyMetadata Include="Homepage" Value="$(PluginHomepage)" />
+    <AssemblyMetadata Include="Tags" Value="$(PluginTags)" />
+    <AssemblyMetadata Include="LongDescription" Value="$(PluginLongDescription)" />
+    <AssemblyMetadata Include="ChangelogURL" Value="$(PluginChangelogUrl)" />
+    <AssemblyMetadata Include="FeaturedImageURL" Value="$(PluginFeaturedImageUrl)" />
+    <AssemblyMetadata Include="ScreenshotURL" Value="$(PluginScreenshotUrl)" />
+    <AssemblyMetadata Include="AltScreenshotURL" Value="$(PluginAltScreenshotUrl)" />
+  </ItemGroup>
+</Project>

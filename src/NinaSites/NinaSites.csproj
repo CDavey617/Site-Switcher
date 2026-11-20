@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../../Plugin.props" />
+  <PropertyGroup>
+    <RootNamespace>CraigDavey.Nina.Sites</RootNamespace>
+    <AssemblyName>NinaSites</AssemblyName>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NINA.Plugin" Version="$(NinaPackageVersion)" />
+  </ItemGroup>
+  <Import Project="../../build/Plugin.targets" />
+</Project>

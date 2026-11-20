@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/NinaSites/NinaSites.csproj" />
+  <Project Path="tests/NinaSites.Tests/NinaSites.Tests.csproj" />
+</Solution>
